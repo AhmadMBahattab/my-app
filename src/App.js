@@ -4,7 +4,11 @@ import { useState } from "react";
 
 function App() {
   const [taskName, settaskName] = useState("");
-  const [taskArray, settaskArray] = useState(["Test tsk only not real "]);
+  const [taskArray, settaskArray] = useState([
+    "Test tsk only not real ",
+    "Test tsk only not real ",
+    "Test tsk only not real ",
+  ]);
 
   const addTask = () => {
     if (taskName == "") return;
@@ -15,9 +19,10 @@ function App() {
     settaskArray(tasks);
   };
   return (
-    <>
+    <div className="HomeContainer">
       <div className="App">
-        <h1 style={{ color: "white" }}>Test Todo List</h1>
+        <h1 style={{ color: "white" }}>New Todo List</h1>
+        <h2>Sub title only </h2>
 
         <label>Tasks input</label>
         <input
@@ -39,13 +44,26 @@ function App() {
           {taskArray.map((task, index) => (
             <div>
               <p style={{ fontSize: 20 }}>
-                {index} : {task}
+                {index + 1} : {task}
               </p>
             </div>
           ))}
         </div>
       ) : null}
-    </>
+      <footer className="Footer">
+        <ul>
+          <li>
+            <a href="#">Twitter</a>
+          </li>
+          <li>
+            <a href="#">youtube</a>
+          </li>
+          <li>
+            <a href="#">google</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
     // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />

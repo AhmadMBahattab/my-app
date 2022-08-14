@@ -1,3 +1,9 @@
+.HomeContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .App {
   text-align: center;
 }
@@ -13,6 +19,7 @@
   background-color: red;
   margin: auto;
   margin-top: 20px;
+  margin-bottom: 30px;
   padding: 20px;
   width: 50%;
   border: 3px solid rgb(199, 212, 199);
@@ -23,6 +30,17 @@
   border-radius: 20px;
   padding: 19px;
 }
+.Footer {
+  background-color: greenyellow;
+  text-decoration: none;
+  list-style: none;
+  margin-top: auto;
+}
+.Footer a {
+  text-decoration: none;
+  color: red;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
