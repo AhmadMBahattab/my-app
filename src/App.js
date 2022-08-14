@@ -14,7 +14,7 @@ function App() {
     if (taskName == "") return;
     let tasks = [...taskArray];
     tasks.push(taskName);
-    console.log("Test button ");
+    console.log("Test button again for the new branch  ");
     settaskName("");
     settaskArray(tasks);
   };
@@ -22,9 +22,7 @@ function App() {
     <div className="HomeContainer">
       <div className="App">
         <h1 style={{ color: "white" }}>New Todo List</h1>
-        <h2>Sub title only </h2>
-
-        <h3> title for branch new </h3>
+        <h2>Sub title edited </h2>
 
         <label>Tasks input</label>
         <input
