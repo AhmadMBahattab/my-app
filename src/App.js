@@ -25,6 +25,8 @@ function App() {
         <h2>Sub title edited </h2>
 
         <label>Tasks input</label>
+        <label>Tasks input</label>
+        <label>Tasks input</label>
         <input
           placeholder="Add task... "
           value={taskName}
