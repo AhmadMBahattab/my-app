@@ -53,6 +53,9 @@ function App() {
         </div>
       ) : null}
       <h4>Seprate line </h4>
+      <h4>Seprate line </h4>
+      <h4>Seprate line </h4>
+      <h4>Seprate line </h4>
 
       <footer className="Footer">
         <ul>
