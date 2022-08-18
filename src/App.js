@@ -21,6 +21,13 @@ function App() {
   return (
     <div className="HomeContainer">
       <div className="App">
+        <form>
+          <label>Email</label>
+          <input placeholder="Enter your Email" name="Email" />
+          <label>Password</label>
+          <input placeholder="Enter your Password" name="Password" />
+        </form>
+
         <h1 style={{ color: "white" }}>New Todo List</h1>
         <h2>Sub title edited </h2>
 
