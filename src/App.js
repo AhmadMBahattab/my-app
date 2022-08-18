@@ -11,7 +11,7 @@ function App() {
   ]);
 
   const addTask = () => {
-    if (taskName == "") return;
+    if (taskName === "") return;
     let tasks = [...taskArray];
     tasks.push(taskName);
     console.log("Test button again for the new branch  ");
@@ -19,7 +19,7 @@ function App() {
     settaskArray(tasks);
   };
   return (
-    <div className="HomeContainer">
+    <div className="HomeContainer bg-indigo-500 pt-16">
       <div className="App">
         <form>
           <label>Email</label>
@@ -29,6 +29,18 @@ function App() {
         </form>
 
         <h1 style={{ color: "white" }}>New Todo List</h1>
+
+        <h1
+          className="
+         m-auto mb-2 p-6
+         w-4/12
+         text-xl text-black font-bold
+         rounded-2xl
+         bg-cyan-100"
+        >
+          New Todo List
+        </h1>
+
         <h2>Sub title edited </h2>
 
         <label>Tasks input</label>
@@ -52,13 +64,16 @@ function App() {
         <div className="tasksContainer">
           {taskArray.map((task, index) => (
             <div>
-              <p style={{ fontSize: 20 }}>
+              <p className="mt-4">
                 {index + 1} : {task}
               </p>
             </div>
           ))}
         </div>
       ) : null}
+      <h4>Seprate line </h4>
+      <h4>Seprate line </h4>
+      <h4>Seprate line </h4>
       <h4>Seprate line </h4>
 
       <footer className="Footer">
